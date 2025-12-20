@@ -1,14 +1,16 @@
 import React from 'react';
-import OutfitGrid from './Components/Home/OutfitGrid';
+import OutfitGrid from './Components/Home/OutfitGrid'; // Ajusta mayúsculas
+import Navbar from './Components/Common/Navbar';       // Ajusta mayúsculas
 
 function App() {
   return (
     <div>
-      {/* Aquí luego pondremos el Navbar y el Hero */}
-      <div style={{ height: '100px' }}></div> {/* Espacio temporal */}
+      <Navbar />
+      
+      {/* Un espacio extra arriba para que no se pegue todo */}
+      <div style={{ height: '50px' }}></div>
       
       <OutfitGrid />
-      
     </div>
   );
 }

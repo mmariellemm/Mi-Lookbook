@@ -1,5 +1,5 @@
 import React from 'react';
-import { outfits } from '../../Data/outfits'; // Revisa si tus mayúsculas son Data u data
+import { outfits } from '../../Data/Outfits'; // Revisa si tus mayúsculas son Data u data
 import { useTheme } from '../../Context/ThemeContext';
 
 const OutfitGrid = () => {
