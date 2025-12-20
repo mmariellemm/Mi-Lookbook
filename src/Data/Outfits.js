@@ -3,33 +3,33 @@ export const outfits = [
         id: 1,
         title: "Office Chic",
         // Usaremos una imagen de placeholder por ahora
-        image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
-        category: "Formal",
+        image: "/images/Manga-larga-rosa-pantalon-negro.jpg",
+        category: "Elegante",
         theme: {
-            background: "#f3e5f5", // Lila suave
-            text: "#4a148c",       // Morado oscuro
+            background: "#e6cfa6", // Lila suave
+            text: "#000000ff",       // Morado oscuro
             accent: "#7b1fa2"      // Morado vibrante
         }
     },
     {
         id: 2,
         title: "Urban Street",
-        image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-        category: "Casual",
+        image: "/images/Blazer-negro-rosa.jpg",
+        category: "Formal",
         theme: {
-            background: "#e0f7fa", // Cyan muy claro
-            text: "#006064",       // Cyan oscuro
+            background: "#7e7e5a", // Cyan muy claro
+            text: "#000000ff",       // Cyan oscuro
             accent: "#00bcd4"      // Cyan electrico
         }
     },
     {
         id: 3,
         title: "Golden Hour",
-        image: "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?q=80&w=800&auto=format&fit=crop",
-        category: "Evening",
+        image: "/images/Tacones-negros-diamantes.jpg",
+        category: "Calzado",
         theme: {
-            background: "#fff3e0", // Naranja crema
-            text: "#e65100",       // Naranja quemado
+            background: "#c3c0bb", // Naranja crema
+            text: "#000000ff",       // Naranja quemado
             accent: "#ff9800"      // Naranja
         }
     }
