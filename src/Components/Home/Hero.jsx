@@ -19,8 +19,8 @@ const Hero = () => {
             {/* 1. Título Gigante */}
             <h1 style={{
                 // En el style del h1:
-                fontFamily: "'Oswald', sans-serif", // <--- Agrega esto
-                textTransform: 'uppercase',
+                //fontFamily: "'Oswald', sans-serif", // <--- Agrega esto
+                //textTransform: 'uppercase',
 
                 fontSize: 'clamp(3rem, 10vw, 8rem)', // Responsivo: se hace chico en móvil y gigante en PC
                 fontWeight: '900',
@@ -30,7 +30,7 @@ const Hero = () => {
                 color: theme.text, // Usa el color del tema actual
                 transition: 'color 0.5s ease'
             }}>
-                CREATIVA
+                MARIELLE
                 <br />
                 <span style={{ opacity: 0.5 }}>MARIELLE</span>
             </h1>
@@ -42,7 +42,7 @@ const Hero = () => {
                 maxWidth: '600px',
                 fontWeight: '500'
             }}>
-                FULL STACK DEVELOPER & MODEL
+                HAY MUCHAS MANERAS DE EXPRESARSE, Y UNA DE ELLAS... ES EN LA ROPA
             </p>
 
             {/* 3. Una foto tuya principal (Opcional: Si quieres una foto fija de presentación) */}
@@ -62,13 +62,11 @@ const Hero = () => {
             </div>
 
             {/* 4. Indicador de Scroll (Flecha animada) */}
-            <div style={{
-                position: 'absolute',
-                bottom: '40px',
-                animation: 'bounce 2s infinite'
-            }}>
-                ↓ DESLISA PARA VER
-            </div>
+            {/* En Hero.jsx */}
+            <br></br>
+            <a href="#lookbook" style={{ /*...tus estilos...*/ textDecoration: 'none', color: 'inherit' }}>
+                ↓ DESLISA PARA EXPLORAR
+            </a>
 
             {/* Agregamos la animación en el mismo archivo para no crear un CSS aparte */}
             <style>
