@@ -1,7 +1,7 @@
 export const outfits = [
     {
         id: 1,
-        title: "Office Chic",
+        title: "Rosa y Negro",
         // Usaremos una imagen de placeholder por ahora
         image: "/images/Manga-larga-rosa-pantalon-negro.jpg",
         category: "Elegante",
@@ -13,7 +13,7 @@ export const outfits = [
     },
     {
         id: 2,
-        title: "Urban Street",
+        title: "Negro y Rosa",
         image: "/images/Blazer-negro-rosa.jpg",
         category: "Formal",
         theme: {
@@ -24,7 +24,7 @@ export const outfits = [
     },
     {
         id: 3,
-        title: "Golden Hour",
+        title: "Negro y Plata",
         image: "/images/Tacones-negros-diamantes.jpg",
         category: "Calzado",
         theme: {
