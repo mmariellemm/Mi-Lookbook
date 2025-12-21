@@ -1,16 +1,25 @@
 import React from 'react';
-import OutfitGrid from './Components/Home/OutfitGrid'; // Ajusta mayúsculas
-import Navbar from './Components/Common/Navbar';       // Ajusta mayúsculas
+import Navbar from './Components/Common/Navbar';
+import Hero from './Components/Home/Hero';
+import OutfitGrid from './Components/Home/OutfitGrid';
+import Bio from './Components/Home/Bio';       // <--- Nuevo
+import Footer from './Components/Common/Footer'; // <--- Nuevo
 
 function App() {
   return (
     <div>
       <Navbar />
       
-      {/* Un espacio extra arriba para que no se pegue todo */}
-      <div style={{ height: '50px' }}></div>
+      <Hero />
       
-      <OutfitGrid />
+      {/* Agregamos el ID aquí para que el botón del Hero sepa a dónde bajar */}
+      <div id="lookbook">
+        <OutfitGrid />
+      </div>
+      
+      <Bio />
+      
+      <Footer />
     </div>
   );
 }
