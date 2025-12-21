@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 // 1. Definimos el estado inicial (Colores por defecto: Blanco y Negro minimalista)
 const defaultTheme = {
@@ -18,6 +18,11 @@ export const ThemeProvider = ({ children }) => {
         setTheme(newTheme);
     };
 
+    // Aplicar el background al body
+    useEffect(() => {
+        document.body.style.backgroundColor = theme.background;
+    }, [theme.background]);
+
     return (
         <ThemeContext.Provider value={{ theme, changeTheme }}>
             {/* Aquí aplicamos las variables CSS dinámicamente al div contenedor.
@@ -25,7 +30,6 @@ export const ThemeProvider = ({ children }) => {
       */}
             <div
                 style={{
-                    backgroundColor: theme.background,
                     color: theme.text,
                     minHeight: '100vh',
                     transition: 'background-color 0.5s ease, color 0.5s ease' // Transición suave

@@ -13,9 +13,8 @@ const Navbar = () => {
             position: 'sticky', // Se queda pegado arriba
             top: 0,
             zIndex: 100,
-            // Usamos un fondo semitransparente del color actual para un efecto elegante
-            backgroundColor: theme.background + 'EE', // 'EE' añade transparencia hex
-            backdropFilter: 'blur(5px)', // Efecto borroso detrás
+            // Usamos un fondo sólido del color actual para un efecto elegante
+            backgroundColor: theme.background,
             transition: 'background-color 0.5s ease'
         }}>
             {/* LOGO */}
