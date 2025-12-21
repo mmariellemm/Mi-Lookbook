@@ -6,7 +6,7 @@ export const outfits = [
         image: "/Mi-Lookbook/images/Manga-larga-rosa-pantalon-negro.jpg",
         category: "Elegante",
         theme: {
-            background: "#d972a4ff", // Lila suave
+            background: "#d7bd8c", // Lila suave
             text: "#000000ff",       // Morado oscuro
             accent: "#7b1fa2"      // Morado vibrante
         }
