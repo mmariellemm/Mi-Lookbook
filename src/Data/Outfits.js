@@ -3,7 +3,7 @@ export const outfits = [
         id: 1,
         title: "Rosa y Negro",
         // Usaremos una imagen de placeholder por ahora
-        image: "/images/Manga-larga-rosa-pantalon-negro.jpg",
+        image: "/Mi-Lookbook/images/Manga-larga-rosa-pantalon-negro.jpg",
         category: "Elegante",
         theme: {
             background: "#d972a4ff", // Lila suave
@@ -14,7 +14,7 @@ export const outfits = [
     {
         id: 2,
         title: "Negro y Rosa",
-        image: "/images/Blazer-negro-rosa.jpg",
+        image: "/Mi-Lookbook/images/Blazer-negro-rosa.jpg",
         category: "Formal",
         theme: {
             background: "#7e7e5a", // Cyan muy claro
@@ -25,7 +25,7 @@ export const outfits = [
     {
         id: 3,
         title: "Negro y Plata",
-        image: "/images/Tacones-negros-diamantes.jpg",
+        image: "/Mi-Lookbook/images/Tacones-negros-diamantes.jpg",
         category: "Calzado",
         theme: {
             background: "#c3c0bb", // Naranja crema

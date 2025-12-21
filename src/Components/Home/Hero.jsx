@@ -55,7 +55,7 @@ const Hero = () => {
                 border: `2px solid ${theme.text}`
             }}>
                 <img
-                    src="/images/Perfil1.png" // <--- CAMBIA ESTO por una foto tuya de perfil o artística
+                    src="/Mi-Lookbook/images/Perfil1.png" // <--- CAMBIA ESTO por una foto tuya de perfil o artística
                     alt="Marielle Profile"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
