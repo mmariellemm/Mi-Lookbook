@@ -18,6 +18,10 @@ const Hero = () => {
 
             {/* 1. Título Gigante */}
             <h1 style={{
+                // En el style del h1:
+                fontFamily: "'Oswald', sans-serif", // <--- Agrega esto
+                textTransform: 'uppercase',
+
                 fontSize: 'clamp(3rem, 10vw, 8rem)', // Responsivo: se hace chico en móvil y gigante en PC
                 fontWeight: '900',
                 lineHeight: '0.9',
