@@ -15,7 +15,7 @@ const Footer = () => {
         }}>
             <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
                 {/* Enlaces reales a tus redes */}
-                <a href="https://github.com/mmariellemm" target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>GITHUB</a>
+                {/*<a href="https://github.com/mmariellemm" target="_blank" style={{ color: 'inherit', textDecoration: 'none' }}>GITHUB</a>*/}
                 <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>LINKEDIN</a>
                 <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>INSTAGRAM</a>
             </div>
