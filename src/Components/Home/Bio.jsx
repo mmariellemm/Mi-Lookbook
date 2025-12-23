@@ -31,9 +31,9 @@ const Bio = () => {
                 marginBottom: '3rem',
                 opacity: 0.8
             }}>
-                Soy <strong>Marielle</strong>, Ingeniera en Entornos Virtuales y Modelo.
-                Mi pasión es fusionar la lógica del desarrollo Frontend con la estética del diseño de moda.
-                Creo experiencias digitales que no solo funcionan perfecto, sino que se ven increíbles.
+                Soy <strong>Marielle</strong>. Este portafolio es una colección de mi estilo 
+                personal y mi versatilidad visual. Este espacio es mi lienzo digital donde 
+                exploro mi gusto por la moda, la fotografía y la estética.
             </p>
 
             {/* Botón de Contacto Estilizado */}
