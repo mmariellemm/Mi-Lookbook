@@ -32,5 +32,41 @@ export const outfits = [
             text: "#000000ff",       // Naranja quemado
             accent: "#ff9800"      // Naranja
         }
+    },
+
+    {
+        id: 4,
+        title: "Negro y Plata",
+        image: "/Mi-Lookbook/images/Manga-larga-rosa-pantalon-negro2.jpg",
+        category: "Calzado",
+        theme: {
+            background: "#b99c5e", // Naranja crema
+            text: "#000000ff",       // Naranja quemado
+            accent: "#ff9800"      // Naranja
+        }
+    },
+
+    {
+        id: 5,
+        title: "Negro y Plata",
+        image: "/Mi-Lookbook/images/Manga-larga-rosa-pantalon-negro3.jpg",
+        category: "Calzado",
+        theme: {
+            background: "#d55f92", // Naranja crema
+            text: "#000000ff",       // Naranja quemado
+            accent: "#ff9800"      // Naranja
+        }
+    },
+
+    {
+        id: 6,
+        title: "Negro y Plata",
+        image: "/Mi-Lookbook/images/Manga-larga-rosa-pantalon-negro4.jpg",
+        category: "Calzado",
+        theme: {
+            background: "#8e6e60", // Naranja crema
+            text: "#000000ff",       // Naranja quemado
+            accent: "#ff9800"      // Naranja
+        }
     }
 ];
