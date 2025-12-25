@@ -20,7 +20,7 @@ const OutfitGrid = () => {
                 fontFamily: 'Helvetica, sans-serif',
                 textTransform: 'uppercase'
             }}>
-                Selected Looks
+                Galería
             </h2>
 
             <div style={{
