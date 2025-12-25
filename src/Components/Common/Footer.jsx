@@ -1,21 +1,26 @@
 import React from 'react';
 import { useTheme } from '../../Context/ThemeContext';
-// 1. Importamos los íconos que queremos usar (Fa = FontAwesome)
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-
+// Importamos Facebook, Instagram y TikTok de la colección estándar
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
+// Importamos la "X" específica de la colección nueva (FontAwesome 6)
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     const { theme } = useTheme();
 
-    // Estilo base para los enlaces (para no repetir código)
+    // Estilo base para los íconos
     const iconStyle = {
         color: theme.text, // Toman el color del tema (blanco o negro)
-        fontSize: '1.5rem', // Tamaño del ícono
+        fontSize: '1.5rem',// Tamaño del ícono
         textDecoration: 'none',
         transition: 'all 0.3s ease',
         display: 'flex',
         alignItems: 'center'
     };
+
+    // Función para el efecto hover (hacerse grande)
+    const handleMouseEnter = (e) => e.currentTarget.style.transform = 'scale(1.2)';
+    const handleMouseLeave = (e) => e.currentTarget.style.transform = 'scale(1)';
 
     return (
         <footer style={{
@@ -29,43 +34,54 @@ const Footer = () => {
                 marginBottom: '1.5rem', 
                 display: 'flex', 
                 justifyContent: 'center', 
-                gap: '2.5rem' // Un poco más de espacio entre íconos
+                gap: '2rem' // Un poco más de espacio entre íconos
             }}>
-                {/* GITHUB */}
+                {/* 1. FACEBOOK */}
                 <a 
-                    href="https://github.com/mmariellemm" 
+                    href="https://facebook.com/tu-usuario" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={iconStyle}
-                    // Pequeño efecto hover inline
-                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
-                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 >
-                    <FaGithub />
+                    <FaFacebook />
                 </a>
 
-                {/* LINKEDIN - ¡No olvides poner tu link real aquí! */}
+                {/* 2. INSTAGRAM */}
                 <a 
-                    href="https://www.linkedin.com/in/tu-usuario" 
+                    href="https://instagram.com/tu-usuario" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={iconStyle}
-                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
-                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                >
-                    <FaLinkedin />
-                </a>
-
-                {/* INSTAGRAM - ¡No olvides poner tu link real aquí! */}
-                <a 
-                    href="https://www.instagram.com/tu-usuario" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={iconStyle}
-                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
-                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 >
                     <FaInstagram />
+                </a>
+
+                {/* 3. TIKTOK */}
+                <a 
+                    href="https://tiktok.com/@tu-usuario" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={iconStyle}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <FaTiktok />
+                </a>
+
+                {/* 4. TWITTER (X) */}
+                <a 
+                    href="https://x.com/tu-usuario" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={iconStyle}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <FaXTwitter />
                 </a>
             </div>
 
