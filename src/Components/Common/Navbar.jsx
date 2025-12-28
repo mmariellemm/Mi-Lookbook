@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../../Context/ThemeContext'; // Ajusta la ruta si tus carpetas cambiaron
+import { useTheme } from '../../Context/ThemeContext';
 
 const Navbar = () => {
     const { theme } = useTheme();
@@ -10,26 +10,55 @@ const Navbar = () => {
             justifyContent: 'space-between',
             alignItems: 'center',
             padding: '2rem 3rem',
-            position: 'sticky', // Se queda pegado arriba
+            position: 'sticky',
             top: 0,
             zIndex: 100,
-            // Usamos un fondo sólido del color actual para un efecto elegante
             backgroundColor: theme.background,
             transition: 'background-color 0.5s ease'
         }}>
-            {/* LOGO */}
-            <div style={{ fontSize: '1.5rem', fontWeight: '900', letterSpacing: '-1px' }}>
+            {/* LOGO - Al darle clic también te lleva al inicio */}
+            <a href="#inicio" style={{ 
+                fontSize: '1.5rem', 
+                fontWeight: '900', 
+                letterSpacing: '-1px',
+                color: 'inherit',     // Hereda el color del tema
+                textDecoration: 'none' // Sin subrayado
+            }}>
                 MARIELLE.
-            </div>
+            </a>
 
-            {/* ENLACES (Solo visuales por ahora) */}
+            {/* ENLACES FUNCIONALES */}
             <div style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem', fontWeight: '600' }}>
-                <span style={{ cursor: 'pointer' }}>NEW ARRIVALS</span>
-                <span style={{ cursor: 'pointer' }}>LOOKBOOK</span>
-                <span style={{ cursor: 'pointer' }}>SHOP</span>
+                
+                {/* 1. INICIO */}
+                <a href="#inicio" style={{ 
+                    cursor: 'pointer', 
+                    color: 'inherit', 
+                    textDecoration: 'none' 
+                }}>
+                    INICIO
+                </a>
+
+                {/* 2. LOOKBOOK */}
+                <a href="#lookbook" style={{ 
+                    cursor: 'pointer', 
+                    color: 'inherit', 
+                    textDecoration: 'none' 
+                }}>
+                    LOOKBOOK
+                </a>
+
+                {/* 3. ACERCA DE MÍ */}
+                <a href="#acerca" style={{ 
+                    cursor: 'pointer', 
+                    color: 'inherit', 
+                    textDecoration: 'none' 
+                }}>
+                    ACERCA DE MÍ
+                </a>
             </div>
 
-            {/* ICONOS (Simulados con texto por ahora o puedes usar librería de íconos) */}
+            {/* ICONOS */}
             <div style={{ display: 'flex', gap: '1.5rem' }}>
                 <span>🔍</span>
                 <span>👜 (0)</span>
