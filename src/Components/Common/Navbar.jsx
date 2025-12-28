@@ -59,10 +59,10 @@ const Navbar = () => {
             </div>
 
             {/* ICONOS */}
-            <div style={{ display: 'flex', gap: '1.5rem' }}>
-                <span>🔍</span>
-                <span>👜 (0)</span>
-            </div>
+            {/*<div style={{ display: 'flex', gap: '1.5rem' }}>
+                <span>Marielle</span>
+                <span>Marielle</span>
+            </div>*/}
         </nav>
     );
 };
